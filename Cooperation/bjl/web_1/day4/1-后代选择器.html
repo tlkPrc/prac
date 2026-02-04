@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 让全部变红 */
+        /* li{
+            color: red;
+        } */
+        /* 只让无序变化 */
+        /* ul li{
+            color: red;
+        } */
+        /* 只让第一个无序变化 */
+        /* .first li{
+            color: red;
+        } */
+        /* 全部后代 */
+        div p{
+            color: red;
+        }
+        /* 顺序从后往前 */
+        
+    </style>
+</head>
+<body>
+    <ul class="first">
+        <li>无序</li>
+        <li>无序</li>
+        <li>无序</li>
+    </ul>
+    <ol>
+        <li>有序</li>
+        <li>有序</li>
+        <li>有序</li>
+    </ol>
+    <ul>
+        <li>无序</li>
+        <li>无序</li>
+        <li>无序</li>
+    </ul>
+
+    <div>
+        <span>
+            <p>red</p>
+        </span>
+    </div>
+</body>
+</html>
