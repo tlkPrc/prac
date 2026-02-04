@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 一个冒号伪类，2个为伪元素 */
+        /* 必须设置content
+        权重与标签选择器一样 
+        为行内元素
+        */
+        .ddiv{
+            color: aquamarine;
+            background-color: #fff;
+        }
+
+        div::before{
+            content: "前伪元素";
+            background-color: blue;
+        }
+
+        div::after{
+            content: "后伪元素";
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ddiv">你好</div>
+</body>
+</html>
