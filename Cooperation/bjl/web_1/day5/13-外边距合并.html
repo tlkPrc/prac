@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 兄弟合并,以外边距大的为主 */
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+            margin-top: 10px;
+        }
+
+        /* 父子塌陷问题 */
+        .father{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            /* 方法二 设置溢出隐藏 */
+            /* overflow: hidden; */
+
+            /* 方法三 设置外边框 */
+            border-top: 2px solid transparent;
+        }
+
+        .son{
+            width: 20px;
+            height: 20px;
+            background-color: brown;
+            /* 添加后下移，方法一不加 */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
