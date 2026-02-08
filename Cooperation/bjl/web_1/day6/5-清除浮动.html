@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .father{
+            width: 200px;
+            background-color: aqua;
+            /* 方法四 overflow */
+            overflow: hidden;
+        }
+
+        .bigson{
+            width: 50px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+
+        .smallson{
+            width: 50px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+
+        .test{
+            width: 1000px;
+            height: 20px;
+            background-color: black;
+        }
+
+        /* 方法一加入html */
+        /* .clear{
+            clear: both;
+        } */
+
+        /* 方法二 为元素 */
+        /* .father::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+        /* 方法三 双伪 */
+        /* .clearfix::before,.clearfix::after{
+            content: "";
+            display: table;
+        }
+
+        .clearfix::after{
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <div class="father clearfix">
+        <div class="bigson"></div>
+        <div class="smallson"></div>
+        <!-- <div class="clear"></div> -->
+    </div>
+    <div class="test"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* - 浮动后的盒子**顶对齐**
+- 浮动后的盒子具备**行内块**特点
+- 浮动后的盒子**脱标**，**不占用标准流的位置** */
+        .left,.right{
+            background-color: pink;
+            width: 200px;
+            height: 500px;
+        }
+
+        .left{
+            margin-left: 100px;
+            float: left;
+        }
+        .right{
+            float: right;
+            margin-right: 100px;
+        }
+
+        .standard{
+            height: 100px;
+            background-color: #0f0e0e;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="left">左</div>
+    <div class="right">右</div>
+    <div class="standard"></div>
+</body>
+</html>
