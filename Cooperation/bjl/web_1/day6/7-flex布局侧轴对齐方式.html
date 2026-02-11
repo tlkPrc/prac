@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+
+            /* 居中 */
+            /* justify-content: center; */
+
+            /* 靠边等间距 */
+            /* justify-content: space-between; */
+
+            /* 不靠边等间距 */
+            /* justify-content: space-evenly; */
+
+            /* 不靠边不等间距 */
+            justify-content: space-around;
+
+
+            /* 侧轴 */
+            /* 从起点 */
+            /* align-items: flex-start; */
+
+            /* 从终点 */
+            /* align-items: self-end; */
+
+            /* 居中 */
+            /* align-items: center; */
+
+            /* 拉伸 默认 */
+            align-items: stretch;
+
+
+
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .box div{
+            width: 80px;
+            /* height: 80px; */
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
