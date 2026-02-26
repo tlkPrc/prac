@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            overflow: hidden;
+            width: 1120px;
+            height: 260px;
+            margin: 40px auto;
+        }
+
+        .box>div{
+            width: 120px;
+            border: 1px solid #fff;
+            transition: all 0.5s;
+        }
+
+        .box>div:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div><img src="./img/1.jpg" alt=""></div>
+        <div><img src="./img/2.jpg" alt=""></div>
+        <div><img src="./img/3.jpg" alt=""></div>
+        <div><img src="./img/4.jpg" alt=""></div>
+        <div><img src="./img/5.jpg" alt=""></div>
+        <div><img src="./img/6.jpg" alt=""></div>
+        <div><img src="./img/7.jpg" alt=""></div>
+    </div> -->
+
+
+    <script>
+        let imgs = [
+            "./img/1.jpg",
+            "./img/2.jpg",
+            "./img/3.jpg",
+            "./img/4.jpg",
+            "./img/5.jpg",
+            "./img/6.jpg",
+            "./img/7.jpg",
+        ]
+        let s = ""
+        for(let i=0;i<imgs.length;i++){
+            s+=`<div><img src="./img/${i+1}.jpg" alt=""></div>`
+        }
+
+        console.log(s)
+
+        document.write(
+            `<div class="box">
+                ${s}
+            </div>`
+        )
+    </script>
+</body>
+</html>

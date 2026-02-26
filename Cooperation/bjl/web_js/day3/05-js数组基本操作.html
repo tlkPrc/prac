@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nums = [1,2,3,4,5]
+
+        // 增
+        // 开头加
+        nums.unshift(0)
+        console.log(nums)
+        // 结尾加
+        nums.push(6)
+        console.log(nums)
+
+        // 删
+        // 开头删
+        nums.shift()
+        console.log(nums)
+        // 结尾删
+        nums.pop()
+        console.log(nums)
+
+        // 改
+        nums[2] = 9
+        console.log(nums)
+
+        // 查
+        console.log(nums)
+
+
+        // splice方法 splice(起始位置，数量，新增1，新增2)
+
+        nums.splice(2,2,33,55)
+    </script>
+</body>
+</html>
